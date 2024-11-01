@@ -2,17 +2,23 @@
 'use strict'
 
 /**
+ * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ * It is **NOT RECOMMENDED** to use RSA for message encryption; asymmetric encryption is primarily used to encrypt keys.
+ * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ */
+
+
+
+/**
  * An Asymmetric Encryption example demonstrating RSA encryption in NodeJS.
  * 
  * This is just an example demonstrating how to use asymmetric encryption with RSA.
- * 
-`* !!! It is **NOT RECOMMENDED** to use RSA for message encryption; asymmetric encryption is primarily used to encrypt keys.
-
-`* The reasons for this are as follows:
+ *
+ * The reasons for this are as follows:
  * - The message size is limited by the key length. With a 2048-bit key, it is only possible to encrypt a message up to 256 bytes.
-`* - The algorithm requires significant resources.
-*
-* For message encryption, it is better to use a hybrid approach.
+ * - The algorithm requires significant resources.
+ *
+ * For message encryption, it is better to use a hybrid approach.
  *
  * @description
  *
